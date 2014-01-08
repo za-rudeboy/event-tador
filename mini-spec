@@ -1,0 +1,24 @@
+Event:
+    Type - Description
+    TimeStamp
+    Misc Info
+    Priority (Insignificant, Significant, Very significant)
+
+---- DB -----
+Tables:
+    
+    Event_Type
+	Type, Description
+
+    Event_Priority
+	Priority_ID, Priority_Description
+
+    Event
+	Event_ID (Auto), Client_Key, Type, TimeStamp, Misc Info, Priority
+	
+
+---- EJB Interfaces ----
+
+ - Register event-type (Exceptions: Type Already exists)
+ - Register event (Exceptions: Event Type not registered)
+ - Query events
